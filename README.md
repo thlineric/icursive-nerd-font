@@ -76,12 +76,12 @@ However, some fonts are not free of charge, so you need to patch them by yoursel
 #### Steps
 
 1. Clone this repository.
-2. `cd /path/to/icursive-nerd-font` and execute `./build.sh Op /path/to/OperatorMono-BookItalic.otf`
+2. `cd /path/to/icursive-nerd-font` and execute `./build.sh Op /absolute/path/to/OperatorMono-BookItalic.otf`
 
 E.g.:
 
 ```sh
-./build.sh Op ~/Downloads/Operator\ Mono/Operator\ Mono\ Book\ Italic.otf
+./build.sh Op /home/sainnhe/Downloads/Operator\ Mono/Operator\ Mono\ Book\ Italic.otf
 ```
 
 The new font files will be placed in the `*Op` folders.
