@@ -1,4 +1,4 @@
-# [Fira Code iCursive S12](https://github.com/sainnhe/icursive-nerd-font/tree/master/Fira%20Code%20iCursive%20S12)
+# Fira Code iCursive S12
 
 ![fira-code](https://user-images.githubusercontent.com/37491630/72135806-3d44be80-337f-11ea-998c-85634fac6887.png)
 
@@ -10,7 +10,7 @@
 
 > [`FiraCode`](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)(by [tonsky](https://github.com/tonsky), SIL Open Font License) + [`Operator Mono`](https://www.typography.com/fonts/operator/styles)(by Hoefler&Co, paid)
 
-# [Source Code Pro iCursive S12](https://github.com/sainnhe/icursive-nerd-font/tree/master/Source%20Code%20Pro%20iCursive%20S12)
+# Source Code Pro iCursive S12
 
 ![source-code-pro](https://user-images.githubusercontent.com/37491630/72135821-433a9f80-337f-11ea-9b0b-25ca175a00e3.png)
 
@@ -22,7 +22,7 @@
 
 > [`Source Code Pro`](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/SourceCodePro)(by Paul D. Hunt (Adobe), SIL Open Font License) + [`Operator Mono`](https://www.typography.com/fonts/operator/styles)(by Hoefler&Co, paid)
 
-# [InconsolataLGC iCursive S12](https://github.com/sainnhe/icursive-nerd-font/tree/master/InconsolataLGC%20iCursive%20S12)
+# InconsolataLGC iCursive S12
 
 ![InconsolataLGC](https://user-images.githubusercontent.com/37491630/72135813-403faf00-337f-11ea-9ee9-bfffde894bc4.png)
 
@@ -34,13 +34,13 @@
 
 > [`InconsolataLGC`](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/InconsolataLGC)(by Raph Levien, SIL Open Font License) + [`Operator Mono`](https://www.typography.com/fonts/operator/styles)(by Hoefler&Co, paid)
 
-# [InconsolataGo iCursive Pb](https://github.com/sainnhe/icursive-nerd-font/tree/master/InconsolataGo%20iCursive%20Pb)
+# InconsolataGo iCursive Pb (~~vscode~~ incompatible)
 
 ![InconsolataGo](https://user-images.githubusercontent.com/37491630/72135810-3e75eb80-337f-11ea-9c15-ed6967d9889b.png)
 
 > [`InconsolataGo`](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/InconsolataGo)(by Raph Levien, SIL Open Font License) + [`Playball`](https://fonts.google.com/specimen/Playball)(by Google, SIL Open Font License)
 
-# [Roboto Mono iCursive Pt](https://github.com/sainnhe/icursive-nerd-font/tree/master/Roboto%20Mono%20iCursive%20Pt)
+# Roboto Mono iCursive Pt
 
 ![roboto-mono](https://user-images.githubusercontent.com/37491630/72135816-4170dc00-337f-11ea-98ff-7ffe3e0b10b3.png)
 
@@ -50,9 +50,9 @@
 
 Many vscode users use fonts like this with some themes that support italics, I want to do the same in vim. I've tried [FiraCodeiScript](https://github.com/kencrocken/FiraCodeiScript), [Operator Mono](https://www.typography.com/fonts/operator/styles) and [Dank Mono](https://dank.sh/) but their support for nerd font symbols is not very good.
 
-Therefore, I decided to patch some fonts that support nerd font symbols myself. All the fonts in this repository support nerd font symbols and should be suitable for use in TUI editors like vim.
+Therefore, I decided to patch some fonts myself. All these fonts should support nerd font symbols and be suitable for use in TUI editors like vim.
 
-However, some fonts are not free of charge, so you need to patch them by yourself.
+Some fonts are free of charge, they are patched already and you can directly use the binary files. However, some fonts are not free, so you need to build them by yourself if you want to use them.
 
 # Installation
 
