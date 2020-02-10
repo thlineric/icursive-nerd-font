@@ -102,7 +102,7 @@ The new font files will be placed in the `*Op` folders.
 
 **Q: What's the color scheme used here?**
 
-**A:** [Gruvbox Material](https://github.com/sainnhe/gruvbox-material)
+**A:** [Gruvbox Material](https://github.com/sainnhe/gruvbox-material) and [Forest Night](https://github.com/sainnhe/vim-color-forest-night)
 
 **Q: What's your status line configuration?**
 
