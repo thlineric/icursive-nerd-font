@@ -84,6 +84,17 @@ inconsolata_lgc_op() {
     ./.cache/fontname.py/fontname.py "InconsolataLGC iCursive Op" ./"InconsolataLGC iCursive Op/InconsolataLGC iCursive Op Italic".ttf > /dev/null
 }
 # }}}
+# Meslo iCursive Op{{{
+meslo_op() {
+    mkdir "Meslo iCursive Op"
+    cp ./"Meslo iCursive S12/Meslo iCursive S12 Regular".ttf ./"Meslo iCursive Op/Meslo iCursive Op Regular".ttf
+    cp ./"Meslo iCursive S12/Meslo iCursive S12 Bold".ttf ./"Meslo iCursive Op/Meslo iCursive Op Bold".ttf
+    cp ./.cache/"Operator Mono Book Italic".ttf ./"Meslo iCursive Op/Meslo iCursive Op Italic".ttf
+    ./.cache/fontname.py/fontname.py "Meslo iCursive Op" ./"Meslo iCursive Op/Meslo iCursive Op Regular".ttf > /dev/null
+    ./.cache/fontname.py/fontname.py "Meslo iCursive Op" ./"Meslo iCursive Op/Meslo iCursive Op Bold".ttf > /dev/null
+    ./.cache/fontname.py/fontname.py "Meslo iCursive Op" ./"Meslo iCursive Op/Meslo iCursive Op Italic".ttf > /dev/null
+}
+# }}}
 
 if [[ "$1"x == "Op"x ]]; then
     cd .cache || exit
@@ -93,6 +104,7 @@ if [[ "$1"x == "Op"x ]]; then
     fira_op
     source_op
     inconsolata_lgc_op
+    meslo_op
 else
     printf "${BGreen}==>${NC} ${RED}Invalid parameters. Usage:${NC}\n"
     printf "${BGreen}==>${NC} ${Green}./build.sh [series] /path/to/non_free_font${NC}\n"

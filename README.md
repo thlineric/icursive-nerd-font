@@ -34,6 +34,18 @@
 
 > [`InconsolataLGC`](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/InconsolataLGC)(by Raph Levien, SIL Open Font License) + [`Operator Mono`](https://www.typography.com/fonts/operator/styles)(by Hoefler&Co, paid)
 
+# Meslo iCursive S12
+
+![meslo-s12](https://user-images.githubusercontent.com/37491630/74113945-389e4080-4b9f-11ea-9513-5560e2406f9b.png)
+
+> [`Meslo`](https://github.com/andreberg/Meslo-Font)(by André Berg, Apache Version 2.0) + `Script12 BT`(by Bitstream, free for personal use)
+
+# Meslo iCursive Op (Non-free)
+
+![meslo-op](https://user-images.githubusercontent.com/37491630/74113943-376d1380-4b9f-11ea-9563-c5d1cb3ebe85.png)
+
+> [`Meslo`](https://github.com/andreberg/Meslo-Font)(by André Berg, Apache Version 2.0) + [`Operator Mono`](https://www.typography.com/fonts/operator/styles)(by Hoefler&Co, paid)
+
 # InconsolataGo iCursive Pb (~~vscode~~ incompatible)
 
 ![InconsolataGo](https://user-images.githubusercontent.com/37491630/72135810-3e75eb80-337f-11ea-9c15-ed6967d9889b.png)
