@@ -95,6 +95,17 @@ meslo_op() {
     ./.cache/fontname.py/fontname.py "Meslo iCursive Op" ./"Meslo iCursive Op/Meslo iCursive Op Italic".ttf > /dev/null
 }
 # }}}
+# Hack iCursive Op{{{
+hack_op() {
+    mkdir "Hack iCursive Op"
+    cp ./"Hack iCursive S12/Hack iCursive S12 Regular".ttf ./"Hack iCursive Op/Hack iCursive Op Regular".ttf
+    cp ./"Hack iCursive S12/Hack iCursive S12 Bold".ttf ./"Hack iCursive Op/Hack iCursive Op Bold".ttf
+    cp ./.cache/"Operator Mono Book Italic".ttf ./"Hack iCursive Op/Hack iCursive Op Italic".ttf
+    ./.cache/fontname.py/fontname.py "Hack iCursive Op" ./"Hack iCursive Op/Hack iCursive Op Regular".ttf > /dev/null
+    ./.cache/fontname.py/fontname.py "Hack iCursive Op" ./"Hack iCursive Op/Hack iCursive Op Bold".ttf > /dev/null
+    ./.cache/fontname.py/fontname.py "Hack iCursive Op" ./"Hack iCursive Op/Hack iCursive Op Italic".ttf > /dev/null
+}
+# }}}
 
 if [[ "$1"x == "Op"x ]]; then
     cd .cache || exit
@@ -105,6 +116,7 @@ if [[ "$1"x == "Op"x ]]; then
     source_op
     inconsolata_lgc_op
     meslo_op
+    hack_op
 else
     printf "${BGreen}==>${NC} ${RED}Invalid parameters. Usage:${NC}\n"
     printf "${BGreen}==>${NC} ${Green}./build.sh [series] /path/to/non_free_font${NC}\n"

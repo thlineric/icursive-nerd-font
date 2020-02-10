@@ -46,6 +46,18 @@
 
 > [`Meslo`](https://github.com/andreberg/Meslo-Font)(by André Berg, Apache Version 2.0) + [`Operator Mono`](https://www.typography.com/fonts/operator/styles)(by Hoefler&Co, paid)
 
+# Hack iCursive S12
+
+![hack-s12](https://user-images.githubusercontent.com/37491630/74114336-743a0a00-4ba1-11ea-8394-7dd203d39f87.png)
+
+> [`Hack`](https://github.com/source-foundry/Hack)(by Source Foundry Authors, MIT License) + `Script12 BT`(by Bitstream, free for personal use)
+
+# Hack iCursive Op (Non-free)
+
+![hack-op](https://user-images.githubusercontent.com/37491630/74114335-7308dd00-4ba1-11ea-8f8b-e810e010f6b2.png)
+
+> [`Hack`](https://github.com/source-foundry/Hack)(by Source Foundry Authors, MIT License) + [`Operator Mono`](https://www.typography.com/fonts/operator/styles)(by Hoefler&Co, paid)
+
 # InconsolataGo iCursive Pb (~~vscode~~ incompatible)
 
 ![InconsolataGo](https://user-images.githubusercontent.com/37491630/72135810-3e75eb80-337f-11ea-9c15-ed6967d9889b.png)
