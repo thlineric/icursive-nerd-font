@@ -110,6 +110,10 @@ E.g.:
 
 The new font files will be placed in the `*Op` folders.
 
+# Contributing
+
+See [PATCH.md](./PATCH.md) for more information.
+
 # FAQ
 
 **Q: What's the color scheme used here?**
