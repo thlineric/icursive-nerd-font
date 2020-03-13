@@ -66,6 +66,10 @@ font:
 
 As you can see, in the screenshot above, the nerd font symbols in the status line look wired. To be precise, this should be called powerline font, because I think this font only patched powerline symbols instead of nerd font symbols. Btw, many fonts only patched powerline symbols, you need to patch nerd font symbols even if some symbols can be displayed.
 
+There is another reason to patch nerd font symbols: some wired symbols can be fixed if it's patched. So it's recommended to patch it.
+
+Edited: I just found this font is already patched in the official repository of [nerd-fonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Agave), you can use it directly.
+
 You can follow the official guide to patch it: [Nerd Fonts Patcher](https://github.com/ryanoasis/nerd-fonts#font-patcher)
 
 In short:
