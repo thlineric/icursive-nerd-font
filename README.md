@@ -58,6 +58,18 @@
 
 > [`Hack`](https://github.com/source-foundry/Hack)(by Source Foundry Authors, MIT License) + [`Operator Mono`](https://www.typography.com/fonts/operator/styles)(by Hoefler&Co, paid)
 
+# Fantasque iCursive Op (Non-free)
+
+![fantasque-op](https://user-images.githubusercontent.com/37491630/76673725-b3dc8300-659f-11ea-81bd-7c5e7559f480.png)
+
+> [`Fantasque Sans Mono`](https://github.com/belluzj/fantasque-sans)(by Jany Belluz, SIL Open Font License) + [`Operator Mono`](https://www.typography.com/fonts/operator/styles)(by Hoefler&Co, paid)
+
+# Fantasque iCursive Dk (Non-free)
+
+![fantasque-dk](https://user-images.githubusercontent.com/37491630/76673727-b4751980-659f-11ea-8cbd-86836178324b.png)
+
+> [`Fantasque Sans Mono`](https://github.com/belluzj/fantasque-sans)(by Jany Belluz, SIL Open Font License) + [`Dank Mono`](https://dank.sh)(by Grazil Ltd, paid)
+
 # InconsolataGo iCursive Pb (~~vscode~~ incompatible)
 
 ![InconsolataGo](https://user-images.githubusercontent.com/37491630/72135810-3e75eb80-337f-11ea-9c15-ed6967d9889b.png)
@@ -109,6 +121,28 @@ E.g.:
 ```
 
 The new font files will be placed in the `*Op` folders.
+
+### Dk series
+
+#### Requirements
+
+1. Binary file of [Dank Mono](https://dank.sh)
+2. GNU Bash
+3. Python (v2.7+)
+4. Python 2 (or Python 3), `python-fontforge` package. See [Nerd Font Patcher](https://github.com/ryanoasis/nerd-fonts/#font-patcher) for details.
+
+#### Steps
+
+1. Clone this repository.
+2. `cd /path/to/icursive-nerd-font` and execute `./build.sh Dk /absolute/path/to/Dank\ Mono\ Italic.ttf`
+
+E.g.:
+
+```sh
+./build.sh Dk /home/sainnhe/Downloads/Dank\ Mono\ Italic.ttf
+```
+
+The new font files will be placed in the `*Dk` folders.
 
 # Contributing
 

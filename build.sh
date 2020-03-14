@@ -51,6 +51,30 @@ general_op() {
     fi
 }
 # }}}
+# General iCursive Dk{{{
+general_dk() {
+    cp "$1" ./"Dank Mono Italic.ttf"
+
+    # patch nerd font symbols
+    printf "\n${BGreen}==>${NC} ${BBlue}Patching nerd font symbols...${NC}\n"
+    if [ ! -d "nerd-fonts" ]; then
+        git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
+    fi
+    cp ./"Dank Mono Italic.ttf" ./nerd-fonts/
+    cd ./nerd-fonts || exit
+    ./font-patcher --mono -w -c -ext ttf "Dank Mono Italic.ttf"
+    mv -f Dank*Compatible.ttf ../"Dank Mono Italic.ttf"
+    rm ./"Dank Mono Italic.ttf"
+    cd ../
+
+    # font rename reo
+    printf "\n${BGreen}==>${NC} ${BBlue}Cloning github.com/chrissimpkins/fontname.py ...${NC}\n"
+    if [ ! -d "fontname.py" ]; then
+        git clone --depth 1 https://github.com/chrissimpkins/fontname.py.git
+        chmod +x ./fontname.py/fontname.py
+    fi
+}
+# }}}
 # Fira Code iCursive Op{{{
 fira_op() {
     mkdir "Fira Code iCursive Op"
@@ -106,6 +130,18 @@ hack_op() {
     ./.cache/fontname.py/fontname.py "Hack iCursive Op" ./"Hack iCursive Op/Hack iCursive Op Italic".ttf > /dev/null
 }
 # }}}
+# Fantasque iCursive Op{{{
+fantasque_op() {
+    cp ./.cache/"Operator Mono Book Italic".ttf ./"Fantasque iCursive Op/Fantasque iCursive Op Italic".ttf
+    ./.cache/fontname.py/fontname.py "Fantasque iCursive Op" ./"Fantasque iCursive Op/Fantasque iCursive Op Italic".ttf > /dev/null
+}
+# }}}
+# Fantasque iCursive Dk{{{
+fantasque_dk() {
+    cp ./.cache/"Dank Mono Italic".ttf ./"Fantasque iCursive Dk/Fantasque iCursive Dk Italic".ttf
+    ./.cache/fontname.py/fontname.py "Fantasque iCursive Dk" ./"Fantasque iCursive Dk/Fantasque iCursive Dk Italic".ttf > /dev/null
+}
+# }}}
 
 if [[ "$1"x == "Op"x ]]; then
     cd .cache || exit
@@ -117,6 +153,13 @@ if [[ "$1"x == "Op"x ]]; then
     inconsolata_lgc_op
     meslo_op
     hack_op
+    fantasque_op
+elif [[ "$1"x == "Dk"x ]]; then
+    cd .cache || exit
+    general_dk "$2"
+    cd ../
+    printf "\n${BGreen}==>${NC} ${BBlue}Patching iCursive font...${NC}\n"
+    fantasque_dk
 else
     printf "${BGreen}==>${NC} ${RED}Invalid parameters. Usage:${NC}\n"
     printf "${BGreen}==>${NC} ${Green}./build.sh [series] /path/to/non_free_font${NC}\n"
